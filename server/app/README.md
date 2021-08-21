@@ -74,3 +74,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 Dockerfile iwth flask and npm
 
 https://github.com/microsoft/Git-Credential-Manager-Core/releases/tag/v2.0.498
+docker exec -it 412cecde7042 /bin/sh
+docker run -it with_frontend:latest npm start 
+docker run --network host   -it    with_frontend:latest npm start
+`
+docker build -t with_frontend .
+docker run -d -p 3000:3000 -it    with_frontend:latest npm start
